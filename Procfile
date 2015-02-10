@@ -1,1 +1,1 @@
-web: bin/hubot --adapter slack --name dad --enable-slash
+web: bin/hubot --adapter slack --name pillowbot --alias '.'
