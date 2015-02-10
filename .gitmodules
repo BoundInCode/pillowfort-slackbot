@@ -1,0 +1,3 @@
+[submodule "node_modules/hubot-plusplus"]
+	path = node_modules/hubot-plusplus
+	url = git@github.com:hubot-scripts/hubot-plusplus.git
