@@ -1,25 +1,3 @@
-Description:
-   Give or take away points. Keeps track and even prints out graphs.
-
- Dependencies:
-   "underscore": ">= 1.0.0"
-   "clark": "0.0.6"
-
- Configuration:
-
- Commands:
-#   <name>++
-#   <name>--
-#   hubot score <name> [for <reason>]
-#   hubot top <amount>
-#   hubot bottom <amount>
-#   hubot erase <user> [<reason>]
-#   GET http://<url>/hubot/scores[?name=<name>][&direction=<top|botton>][&limit=<10>]
-#
-# Author:
-#   ajacksified
-
-
 _ = require('underscore')
 clark = require('clark')
 querystring = require('querystring')
@@ -29,9 +7,7 @@ module.exports = (robot) ->
   scoreKeeper = new ScoreKeeper(robot)
 
   # sweet regex bro
-  robot.hear  fuck|shit|cunt|asshole|dick|twat|pussy|
-  
- i, (msg) ->
+  robot.hear  fuck|shit|cunt|asshole|dick|twat|pussy i, (msg) ->
  #    # let's get our local vars in place
  #    [dummy, name, operator, reason] = msg.match
  #    from = msg.message.user.name.toLowerCase()
