@@ -8,7 +8,8 @@ module.exports = (robot) ->
   # scoreKeeper = new ScoreKeeper(robot)
 
   # sweet regex bro
-  robot.hear  /fuck|shit|cunt|asshole|dick|twat|pussy/i, (msg) ->
+  robot.hear /fuck|shit|cunt|asshole|dick|twat|pussy/i, (msg) ->
+  	msg.send "Hey, No Swearing. We are adults now."
  #    # let's get our local vars in place
  #    [dummy, name, operator, reason] = msg.match
  #    from = msg.message.user.name.toLowerCase()
@@ -52,5 +53,3 @@ module.exports = (robot) ->
  #        reason: reason
  #      }
 
- # 
- msg.send "Hey, No Swearing. We are adults now."
