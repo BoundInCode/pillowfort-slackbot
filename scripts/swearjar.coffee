@@ -1,12 +1,11 @@
 
-
-_ = require('underscore')
-clark = require('clark')
-querystring = require('querystring')
-ScoreKeeper = require('./scorekeeper')
+# _ = require('underscore')
+# clark = require('clark')
+# querystring = require('querystring')
+# ScoreKeeper = require('./scorekeeper')
 
 module.exports = (robot) ->
-  scoreKeeper = new ScoreKeeper(robot)
+  # scoreKeeper = new ScoreKeeper(robot)
 
   # sweet regex bro
   robot.hear  fuck|shit|cunt|asshole|dick|twat|pussy
