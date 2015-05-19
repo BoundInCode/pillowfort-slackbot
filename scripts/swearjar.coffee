@@ -15,7 +15,7 @@ Description:
 #   hubot bottom <amount>
 #   hubot erase <user> [<reason>]
 #   GET http://<url>/hubot/scores[?name=<name>][&direction=<top|botton>][&limit=<10>]
-#
+
 # Author:
 #   ajacksified
 
@@ -29,7 +29,7 @@ module.exports = (robot) ->
   scoreKeeper = new ScoreKeeper(robot)
 
   # sweet regex bro
-  robot.hear  fuck|shit|cunt|asshole|dick|twat|pussy|
+  robot.hear  fuck|shit|cunt|asshole|dick|twat|pussy
   
  i, (msg) ->
  #    # let's get our local vars in place
