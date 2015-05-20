@@ -8,8 +8,23 @@ module.exports = (robot) ->
   # scoreKeeper = new ScoreKeeper(robot)
 
   # sweet regex bro
-  robot.hear /fuck|shit|cunt|asshole|dick|twat|pussy/i, (msg) ->
-  	msg.send "Hey, No Swearing. We are adults now."
+  robot.hear /(.*)fuck|shit|cunt|asshole|dick|twat|pussy|bitch|woodcutting(.*)/i, (msg) ->
+    fullmessage = msg.match[0]
+    count = (fullmessage.match(/fuck|shit|cunt|asshole|dick|twat|pussy|bitch|woodcutting/g) || []).length
+    if count > 6
+        msg.send "Why must you swear so much you sailor! Jee Whiz!"
+    else if count > 5 
+        msg.send "Mike Stop"
+    else if count > 4
+        msg.send "Swears! No!"
+    else if count > 3
+        msg.send "Those words hurt my pillowbot ears!" 
+    else if count > 2
+        msg.send "This is worse than Hitler!"
+    else if count > 1
+        msg.send "This is why your mother left us."
+    else if count > 0
+        msg.send "Hey, No Swearing. We are adults now."
  #    # let's get our local vars in place
  #    [dummy, name, operator, reason] = msg.match
  #    from = msg.message.user.name.toLowerCase()
