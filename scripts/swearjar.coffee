@@ -22,6 +22,7 @@ module.exports = (robot) ->
   	else if count > 2
   		msg.send "This is worse than Hitler!"
   	else if count > 1
+  	 	msg.send "This is why your mother left us."
  	else
   		msg.send "Hey, No Swearing. We are adults now."
  #    # let's get our local vars in place
