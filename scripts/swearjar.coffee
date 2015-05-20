@@ -10,7 +10,7 @@ module.exports = (robot) ->
   # sweet regex bro
   robot.hear /(.*)fuck|shit|cunt|asshole|dick|twat|pussy|bitch|woodcutting(.*)/i, (msg) ->
     fullmessage = msg.match[0]
-    count = (fullmessage.match(/fuck|shit|cunt|asshole|dick|twat|pussy/g) || []).length
+    count = (fullmessage.match(/fuck|shit|cunt|asshole|dick|twat|pussy|bitch|woodcutting/g) || []).length
     if count > 6
         msg.send "Why must you swear so much you sailor! Jee Whiz!"
     else if count > 5 
